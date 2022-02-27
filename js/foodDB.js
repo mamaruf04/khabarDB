@@ -23,8 +23,8 @@ const displaySearchResult = meals => {
     const searchResult = document.getElementById('search-result');
     // clear previous loaded data
     searchResult.textContent = '';
-    // nothing found notify
-    // will do it later!
+    // nothing found notify 
+        // i will add later.
     meals.forEach(meal => {
         const div = document.createElement('div');
         div.classList.add('col');
@@ -49,8 +49,8 @@ const loadMealDetail = mealId => {
 }
 
 const displayMealDetail = meal => {
-    console.log(meal);
     const mealDetails = document.getElementById('meal-details');
+    mealDetails.textContent = "";
     const div = document.createElement('div');
     div.classList.add('card')
     div.innerHTML = `
